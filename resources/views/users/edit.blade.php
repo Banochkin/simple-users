@@ -18,7 +18,15 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Password:</label>
-                    <input type="password" class="form-control" name="password" required>
+                    <input type="password" class="form-control" name="password" value="123123123" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select name="role" class="custom-select">
+                        @foreach($roles as $role)
+                            <option value="{{$role->name}}">{{$role->name}}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Update</button>
             </form>
