@@ -55,6 +55,8 @@ class UserController extends Controller
 
         $user->save();
 
+        $user->syncRoles('client');
+
         return redirect('/users');
     }
 
