@@ -5,7 +5,7 @@
         <div class="col-sm-12">
             <h1 class="display-3">Users</h1>
             @role('admin')
-            <a style="margin: 19px;" href="{{ route('users.create')}}" class="btn btn-primary">New user</a>
+            <a href="{{ route('users.create')}}" class="btn btn-primary mb-3">New user</a>
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -25,7 +25,7 @@
                 </tbody>
             </table>
             @else
-                <h2>access denied</h2>
+                <h2>Access denied</h2>
             @endrole
 
 @endsection
